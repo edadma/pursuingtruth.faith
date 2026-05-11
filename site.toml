@@ -30,6 +30,11 @@ headingShift = 0
 # segment is a dev-time convenience that doesn't survive GitHub Pages.
 htmlDir = ""
 
+# CI checks juicer's repo out to `.juicer/` inside this workspace; without
+# this exclude, the site walk would descend into it and try to render
+# juicer's bundled themes' layouts as our pages.
+excludeDirs = [".juicer"]
+
 # Author registry — drives byline if a piece sets `author: ed` in frontmatter.
 [[authors]]
 id   = "ed"
