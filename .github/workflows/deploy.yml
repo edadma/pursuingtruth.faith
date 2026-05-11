@@ -1,0 +1,93 @@
+# Build & deploy https://pursuingtruth.faith/.
+#
+#   Push to `stable`     → builds and deploys to GitHub Pages.
+#   PR targeting `stable` → builds (sanity check), uploads artifact, no deploy.
+#   workflow_dispatch    → manual trigger from the Actions tab.
+#
+# The site is built with juicer (the SSG). Until juicer is published as a
+# binary on Maven Central, the workflow checks out juicer's `stable` branch
+# and runs its build against this repo's content.
+
+name: Deploy
+
+on:
+  push:
+    branches: ["stable"]
+  pull_request:
+    branches: ["stable"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v4
+
+      - name: Checkout juicer (the SSG)
+        uses: actions/checkout@v4
+        with:
+          repository: edadma/juicer
+          ref: stable
+          path: .juicer
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up sbt
+        uses: sbt/setup-sbt@v1
+
+      - name: Cache sbt
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.sbt
+            ~/.cache/coursier
+          key: ${{ runner.os }}-sbt-${{ hashFiles('.juicer/**/build.sbt', '.juicer/**/project/**') }}
+          restore-keys: ${{ runner.os }}-sbt-
+
+      - name: Build site
+        working-directory: .juicer
+        run: |
+          sbt "juicerJVM/run build -s ${{ github.workspace }} -d ${{ github.workspace }}/_site -b https://pursuingtruth.faith/"
+
+      - name: Write CNAME
+        if: github.ref == 'refs/heads/stable'
+        run: echo 'pursuingtruth.faith' > _site/CNAME
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/stable'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: github.ref == 'refs/heads/stable'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,58 @@
+# pursuingtruth.faith
+#
+# Built with juicer (the SSG) and themed with juicerdocs, which is vendored
+# under themes/juicerdocs/ so this repo stays self-contained — juicer is only
+# needed at build time (CI checks it out to .juicer/, locally it lives at
+# ../juicer/).
+#
+# Local preview (from the juicer repo, with this repo as a sibling):
+#   sbt 'juicerJVM/run serve -s ../pursuingtruth.faith -L'
+#
+# Build:
+#   sbt 'juicerJVM/run build -s ../pursuingtruth.faith -d ../pursuingtruth.faith/_site -b https://pursuingtruth.faith/'
+#
+# Production: pushed to `stable`, built + deployed by .github/workflows/deploy.yml.
+
+title   = "Pursuing Truth"
+tagline = "a friend's notebook of reasons"
+author  = "Ed Maxedon"
+baseURL = "https://pursuingtruth.faith/"
+
+# repoURL drives the topbar GitHub icon in juicerdocs.
+repoURL = "https://github.com/edadma/pursuingtruth.faith"
+
+theme = "juicerdocs"
+
+# Page <h1> comes from frontmatter title — content headings start at h2.
+headingShift = 0
+
+# Static-host deploy: URL space must match disk layout. The default 'html'
+# segment is a dev-time convenience that doesn't survive GitHub Pages.
+htmlDir = ""
+
+# Author registry — drives byline if a piece sets `author: ed` in frontmatter.
+[[authors]]
+id   = "ed"
+name = "Ed Maxedon"
+bio  = "Sharing the evidence behind the Christian faith — out of love, not obligation."
+
+# Theme customization — opt-in features and palette overrides for juicerdocs.
+[juicerdocs]
+# Opt into KaTeX rendering. The markdown parser already emits math markup
+# (inline `$x^2$`, block `$$ ... $$`); this loads the renderer in <head>.
+math = true
+
+# Warm "reading lamp + ink + parchment" palette — bronze/honey brand with
+# deep-ink accents. Distinct from juicer's magenta and squiggly's cyan so
+# the three sites read as siblings, not clones. Easy to swap later.
+brand           = "#b45309"        # amber-700 — primary
+brandStrong     = "#92400e"        # amber-800 — hover
+brandSoft       = "#fffbeb"        # amber-50  — backgrounds
+accent          = "#1e3a8a"        # blue-900  — deep ink, secondary
+leaf            = "#059669"        # emerald-600 — success / leaf
+
+brandDark       = "#fbbf24"        # amber-400
+brandStrongDark = "#fcd34d"        # amber-300
+brandSoftDark   = "rgb(251 191 36 / .12)"
+accentDark      = "#93c5fd"        # blue-300
+leafDark        = "#34d399"        # emerald-400

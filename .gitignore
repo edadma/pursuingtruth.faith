@@ -1,0 +1,18 @@
+# Built site
+_site/
+
+# JVM / sbt
+target/
+.bsp/
+.bloop/
+.metals/
+.scala-build/
+
+# Editors
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
