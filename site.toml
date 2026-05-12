@@ -1,9 +1,11 @@
 # pursuingtruth.faith
 #
-# Built with juicer (the SSG) and themed with juicerdocs, which is vendored
-# under themes/juicerdocs/ so this repo stays self-contained — juicer is only
-# needed at build time (CI checks it out to .juicer/, locally it lives at
-# ../juicer/).
+# Built with juicer (the SSG) and themed with juicerstudy — a prose-first
+# juicer theme tuned for essays / notebooks / curated libraries of evidence
+# (as opposed to juicerdocs, which is for software documentation). The theme
+# is vendored under themes/juicerstudy/ so this repo stays self-contained:
+# juicer is only needed at build time (CI checks it out to .juicer/, locally
+# it lives at ../juicer/).
 #
 # Local preview (from the juicer repo, with this repo as a sibling):
 #   sbt 'juicerJVM/run serve -s ../pursuingtruth.faith -L'
@@ -18,10 +20,10 @@ tagline = "a friend's notebook of reasons"
 author  = "Ed Maxedon"
 baseURL = "https://pursuingtruth.faith/"
 
-# repoURL drives the topbar GitHub icon in juicerdocs.
+# repoURL drives the topbar GitHub icon in juicerstudy.
 repoURL = "https://github.com/edadma/pursuingtruth.faith"
 
-theme = "juicerdocs"
+theme = "juicerstudy"
 
 # Page <h1> comes from frontmatter title — content headings start at h2.
 headingShift = 0
@@ -41,23 +43,23 @@ id   = "ed"
 name = "Ed Maxedon"
 bio  = "Sharing the evidence behind the Christian faith — out of love, not obligation."
 
-# Theme customization — opt-in features and palette overrides for juicerdocs.
-[juicerdocs]
+# Theme customization — opt-in features and palette overrides for juicerstudy.
+[juicerstudy]
 # Opt into KaTeX rendering. The markdown parser already emits math markup
 # (inline `$x^2$`, block `$$ ... $$`); this loads the renderer in <head>.
 math = true
 
 # Warm "reading lamp + ink + parchment" palette — bronze/honey brand with
-# deep-ink accents. Distinct from juicer's magenta and squiggly's cyan so
-# the three sites read as siblings, not clones. Easy to swap later.
+# deep-ink accents. Overrides juicerstudy's default fountain-pen-blue brand
+# so the site reads warm rather than cool. Easy to revise later.
 brand           = "#b45309"        # amber-700 — primary
 brandStrong     = "#92400e"        # amber-800 — hover
-brandSoft       = "#fffbeb"        # amber-50  — backgrounds
+brandSoft       = "rgba(180, 83, 9, 0.10)"
 accent          = "#1e3a8a"        # blue-900  — deep ink, secondary
 leaf            = "#059669"        # emerald-600 — success / leaf
 
 brandDark       = "#fbbf24"        # amber-400
 brandStrongDark = "#fcd34d"        # amber-300
-brandSoftDark   = "rgb(251 191 36 / .12)"
+brandSoftDark   = "rgba(251, 191, 36, 0.14)"
 accentDark      = "#93c5fd"        # blue-300
 leafDark        = "#34d399"        # emerald-400
