@@ -167,41 +167,10 @@ Of those two options, the first is, by a substantial margin, the
 labs actually find. The deep-time reading requires us to either
 discount the data or invent new physics.
 
-## Cumulative force
-
-Each of the four arguments in this section, taken alone, can be
-dismissed by an old-earth reader as an isolated anomaly with some
-imaginable explanation. The four together are harder to dismiss.
-The lunar recession says the moon cannot have been receding for
-4.5 billion years at anything like the present rate. The ocean
-sodium says the oceans cannot have been accumulating salt for 3
-billion years at anything like the present rate. The collagen
-says dinosaur bones cannot have been preserved for 65 million
-years at anything like the present rate of protein decay. The
-carbon-14 says coal and diamonds cannot be older than tens of
-thousands of years given the half-life and the measured atomic
-abundance.
-
-Four independent clocks. Four independent methods. Four converging
-upper bounds, none of them remotely compatible with the standard
-chronology.
-
-The honest reading, in my view, is that the clocks are telling us
-something true. The earth, on the evidence of what we can actually
-measure today, is not billions of years old.
-
-How much younger it is than billions is a separate question. The
-biblical chronology of roughly six thousand years is *consistent*
-with the upper bounds these methods give, but it is more specific
-than any of them require. The serious young-earth literature does
-not pretend the four arguments above prove a six-thousand-year-old
-earth on their own. What they do prove — strongly — is that the
-deep-time chronology is in deep trouble.
-
-Whether you take the next step and accept the biblical chronology
-specifically depends on how you weigh the historical evidence for
-the Bible's reliability. That is a question for the
-[history section](/history/), not for this one.
+Next: [the persistence of comets](/origins/young-earth/comets/), a
+fifth argument from a different field entirely — planetary dynamics
+— that converges on the same upper bound, and gathers the
+cumulative force of all five at the end.
 
 [^rate]: The full results were published as L. Vardiman, A. A.
     Snelling, and E. F. Chaffin, eds., *Radioisotopes and the Age

@@ -48,13 +48,20 @@ papers in mainstream journals. The short version:
 - Coal and diamonds contain measurable carbon-14, which has a
   half-life of 5,730 years and should be undetectable in anything
   older than about a hundred thousand years.
+- Comets lose mass on every perihelion pass and have lifetimes on
+  the order of $10^5$ years; after 4.6 billion the inner solar
+  system should be empty of them. The proposed reservoir supplying
+  long-period comets (the Oort cloud) has been searched for and
+  not observed.
 
-Each of these is a measurement, made today, by mainstream
-laboratories. The young-earth reading is the simpler explanation of
-the measurements. The deep-time reading requires either invoking
-unknown mechanisms (preservation in the case of collagen,
-generation in the case of C-14), changing the rates by orders of
-magnitude (in the case of the moon and the salt), or both.
+Each of these is a measurement (or, in the last case, a conspicuous
+non-measurement) made today by mainstream science. The young-earth
+reading is the simpler explanation of all five. The deep-time
+reading requires either invoking unknown mechanisms (preservation
+in the case of collagen, generation in the case of C-14),
+changing the rates by orders of magnitude (in the case of the moon
+and the salt), or positing an unobserved reservoir (in the case of
+the comets) — or some combination.
 
 I want to be clear that this is not the consensus position in
 contemporary academic science, and I take the consensus seriously.
@@ -171,8 +178,9 @@ Christianity*, my short answer is:
 - Many of the actual scientific results of the last hundred years —
   the fine-tuning of the constants, the information-rich structure
   of the cell, the soft tissue in dinosaur bones, the carbon-14
-  in diamonds — fit the biblical picture *better* than they fit
-  the alternatives, when read without the deep-time prior.
+  in diamonds, the persistence of comets in a solar system that
+  should have lost them — fit the biblical picture *better* than
+  they fit the alternatives, when read without the deep-time prior.
 - The places where there appears to be tension are usually places
   where a *particular interpretation* of the Bible is in tension
   with a *particular interpretation* of the science. Both

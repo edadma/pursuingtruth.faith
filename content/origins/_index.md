@@ -27,12 +27,15 @@ The fourth is the most contested in this section. I take the
 position that the earth is young — thousands rather than billions
 of years old — for empirical reasons set out in
 [evidence for a young earth](/origins/young-earth/). The case
-rests on four independent rate-based clocks (lunar recession, ocean
-sodium, dinosaur soft tissue, carbon-14 in coal and diamonds), each
-of which gives an upper bound on the age of the earth or its
-features dramatically shorter than the textbook chronology, and
-each of which is measured by mainstream laboratories using
-mainstream techniques. The pieces in that subsection take them one
-at a time.
+rests on five independent rate-based clocks (lunar recession, ocean
+sodium, dinosaur soft tissue, carbon-14 in coal and diamonds, and
+the persistence of comets in a solar system supposedly old enough
+to have lost them all), each of which gives an upper bound on the
+age of the earth or its features dramatically shorter than the
+textbook chronology, and each of which rests on measurements made
+by mainstream science (or, in the case of the long-period comet
+reservoir invoked by the standard chronology, the conspicuous
+*absence* of such measurements seventy-five years after it was
+proposed). The pieces in that subsection take them one at a time.
 
 The pieces below take all four questions in order.

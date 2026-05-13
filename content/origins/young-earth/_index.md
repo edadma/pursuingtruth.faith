@@ -50,9 +50,9 @@ of the system is the result of a much shorter elapsed time. Occam's
 razor — applied at the level of *number of unsupported assumptions*
 rather than *number of years* — favors the simpler reading.
 
-## The four evidences
+## The five evidences
 
-The pieces in this section take four of these clocks one at a time:
+The pieces in this section take five of these clocks one at a time:
 
 - **[The receding moon](/origins/young-earth/the-receding-moon/)** —
   tidal friction is pushing the moon away from earth at a measurable
@@ -71,9 +71,15 @@ The pieces in this section take four of these clocks one at a time:
   measurable C-14 in coal, diamonds, and dinosaur bones, when
   anything older than ~100,000 years should have no detectable
   C-14 at all.
+- **[The persistence of comets](/origins/young-earth/comets/)** —
+  comets lose mass on every pass and die off in tens of thousands
+  of years; the solar system should be empty of them after 4.6
+  billion, and yet we see hundreds, with the proposed source
+  reservoir for long-period comets still unobserved seventy-five
+  years after it was hypothesized.
 
 I think any one of these would be enough to give a thoughtful
-person pause. The cumulative force of all four is, in my reading,
+person pause. The cumulative force of all five is, in my reading,
 substantial.
 
 ## What this is not
