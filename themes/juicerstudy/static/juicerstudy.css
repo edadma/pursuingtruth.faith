@@ -980,6 +980,27 @@ hr {
   margin-top: 2rem;
 }
 
+/* Optional hero image — frontmatter `heroImage:` on the root _index.md.
+   Rendered with imageVariants for responsive delivery. */
+.juicerstudy-hero-figure {
+  margin: 3rem 0 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+.juicerstudy-hero-figure img,
+.juicerstudy-hero-figure picture {
+  width: 100%;
+  display: block;
+}
+.juicerstudy-hero-figure figcaption {
+  padding: 0.6rem 1rem 0.8rem;
+  font-size: 0.875rem;
+  color: var(--fg-muted);
+  font-style: italic;
+  background: var(--surface);
+}
+
 .juicerstudy-cards {
   display: grid;
   gap: 1rem;
@@ -1103,6 +1124,24 @@ hr {
   color: var(--fg-soft);
   margin: 0 0 2rem 0;
   line-height: 1.6;
+}
+
+/* Splash layout — frontmatter `splash: true` (set on `_index.md` for
+   an editorial landing) tells `baseof.html` to render without
+   sidebar + rail. The body markdown stays at the same comfortable
+   reading measure (juicerstudy is about prose, not full-bleed
+   layouts), but the landing's <h1> + lead get extra breathing room
+   so the page feels like a cover rather than just another note. */
+.juicerstudy-page-splash .juicerstudy-content > article > h1:first-child,
+.juicerstudy-page-splash .juicerstudy-landing > h1:first-child {
+  margin-top: 3rem;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.juicerstudy-page-splash .juicerstudy-lead {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
 }
 
 /* Section-list shortcode — a catalog of the current section's
